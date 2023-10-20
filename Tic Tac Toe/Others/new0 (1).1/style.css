@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Poppins:wght@100&family=Roboto+Condensed&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Poppins:wght@100&family=Roboto+Condensed&family=Roboto:wght@300&family=Signika:wght@700&display=swap');
+
+.h-heading{
+    width: 100vw;
+    text-align: center;
+    font-size: 300%;
+    font-family: 'Signika';
+}
+
+body{
+    background-color: #cfcece;
+}
+.cell{
+    background-color: #cfcece;
+    color: #cfcece;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika';
+}
+.align{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.row1,.row2,.row3{
+    display: flex;
+    align-items:space-between;
+    justify-content: space-between;
+}
+
+.row1{
+    margin-top: -21px;
+}
+.main-grid{
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    border-radius: 5px;
+    position: absolute;
+    left:565px;
+    top:120px;
+}
+
+.cell{
+    width: 31%;
+    height: 186px;
+    font-size: 1000%;
+    font-weight: 1000;
+    border: none;
+    margin-top: 21px;
+}
+
+.result{
+    background-color: beige;
+    margin-left: 200px;
+    margin-top: 100px;
+    width: fit-content;
+}
+
+.p1score,.p2score{
+    width: 200px;
+    font-size: 200%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.align{
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+    margin-top: -35px;
+}
+
+
+.footer{
+    margin-top: 40px;
+    font-weight: bolder;
+    font-size: 300%;
+    margin-top: 200px;
+    
+}
+
+.part01, .scoreboard{
+    background-color: rgba(0, 255, 255, 0);
+    font-size: 230%;
+}
+
+
+.roundnumber{
+    display: flex;
+    font-size: 110%;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.roundno{
+    margin-left: 25px;
+}
+
+.display-text{
+    color: transparent;
+    /* background-color: aqua; */
+    margin-top: 170px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.red{
+    color: #c73e1d;
+}
+
+.green{
+    color:#53c14b;
+}
+
+table{
+    /* background-color: #bba91f; */
+    /* margin-right: 100px; */
+    width: 400px;
+    height: 300px;
+    /* margin-top: 50px; */
+    align-items: center;
+    position: fixed;
+    /* z-index: 1; */
+    margin-left: -500px;
+    margin-top: -135px;
+}
+
+td{
+    text-align: center;
+    margin-right: 20px;
+    
+}
+
+.atext{
+    margin-top: 30px;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.are{
+    font-size: 140%;
+    margin-left: 70px;
+    margin-right: -130px;
+    padding-left: 70px;
+}
+
+.reset{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #c73e1d;
+    margin-left: -400px;
+    font-size: 140%;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    margin-top: 200px;
+    color: #cfcece;
+    border: none;
+}
+
+.reset:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.popup1{
+    background-color: #c73e1d;
+    width: 500px;
+    height: 230px;
+    text-align: center;
+    vertical-align: middle;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border: 10px solid black;
+    box-shadow: 4px black;
+    visibility: hidden;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-around;
+}
+
+.popup2{
+    background-color: #53c14b;
+    width: 500px;
+    height: 230px;
+    text-align: center;
+    vertical-align: middle;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border: 10px solid black;
+    box-shadow: 4px black;
+    visibility: hidden;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-around;
+}
+
+.again{
+    background-color: black;
+    color: #cfcece;
+    width: 150px;
+    height: 60px;
+    border: none;
+    font-size: 170%;
+    align-self: flex-end;
+    margin-right: 60px;
+}
+
+.again:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.show{
+    visibility: visible;
+}
+
+

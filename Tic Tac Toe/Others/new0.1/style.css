@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Poppins:wght@100&family=Roboto+Condensed&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Poppins:wght@100&family=Roboto+Condensed&family=Roboto:wght@300&family=Signika:wght@700&display=swap');
+
+.h-heading{
+    width: 100vw;
+    text-align: center;
+    font-size: 300%;
+    font-family: 'Signika';
+}
+
+body{
+    background-color: #cfcece;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.align{
+    display: flex;
+    align-items: center;
+}
+
+.row1,.row2,.row3{
+    display: flex;
+    align-items:space-between;
+    justify-content: space-between;
+}
+
+.row1{
+    margin-top: -21px;
+}
+.main-grid{
+    background-color: black;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    border-radius: 5px;
+}
+
+.cell{
+    width: 31%;
+    height: 186px;
+    font-size: 900%;
+    font-weight: 1000;
+    border: none;
+    margin-top: 21px;
+    background-color: #cfcece;
+    color: #cfcece;
+}
+
+.result{
+    background-color: beige;
+    margin-left: 200px;
+    margin-top: 100px;
+    width: fit-content;
+}
+
+.p1score,.p2score{
+    width: 200px;
+    font-size: 200%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.align{
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+
+.footer{
+    margin-top: 40px;
+    font-weight: bolder;
+    font-size: 300%;
+}
+
+.part01, .scoreboard{
+    background-color: aqua;
+    font-size: 400%;
+}
