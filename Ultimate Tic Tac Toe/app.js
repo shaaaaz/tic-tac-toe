@@ -2218,13 +2218,14 @@ row99.onclick = () => {
 
 
 
-
+let isfirstturn = true;
 
 
 
 // to change turn after every click
 
 function changeturn() {
+    isfirstturn=false
     if (turn == "X") {
         turn = "O"
     }
@@ -2961,6 +2962,12 @@ playagain.onclick = () => {
     location.reload()
 }
 
+const pplayagain = document.querySelector(".pagain")
+
+pplayagain.onclick = () => {
+    location.reload()
+}
+
 function mainwincheck() {
     console.log(isdraw, " isdraw")
     if ((mainwin1 == mainwin2 && mainwin2 == mainwin3 && mainwin3 == 1) ||
@@ -3458,6 +3465,2680 @@ const pos6 = document.querySelectorAll(".cell6")
 const pos7 = document.querySelectorAll(".cell7")
 const pos8 = document.querySelectorAll(".cell8")
 const pos9 = document.querySelectorAll(".cell9")
+
+
+    row31.addEventListener('mouseenter',()=>{
+        if(check31==0 && position3==1  && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g1.classList.add("show")
+                // g1.classList.remove("show")
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+
+            }
+            if (turn == "O") {
+                r1.classList.add("show")
+                // r1.classList.remove("show")
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    })
+
+
+    row31.addEventListener('mouseleave',()=>{
+        if(check31==0 && position3==1  && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g1.classList.remove("show")
+                r1.classList.remove("show")
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+
+            }
+            if (turn == "O") {
+                r1.classList.remove("show")
+                g1.classList.remove("show")
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    })
+
+    row32.addEventListener('mouseenter',()=>{
+        if(check32==0 && position3==1 && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g2.classList.add("show")
+                // g1.classList.remove("show")
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+
+            }
+            if (turn == "O") {
+                r2.classList.add("show")
+                // r1.classList.remove("show")
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    })
+
+
+    row32.addEventListener('mouseleave',()=>{
+        if(check32==0 && position3==1 && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g2.classList.remove("show")
+                r2.classList.remove("show")
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+
+            }
+            if (turn == "O") {
+                r2.classList.remove("show")
+                g2.classList.remove("show")
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    })
+
+    row33.addEventListener('mouseenter',()=>{
+        if(check33==0 && position3==1 && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g3.classList.add("show")
+                r3.classList.remove("show")
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+
+            }
+            if (turn == "O") {
+                r3.classList.add("show")
+                g3.classList.remove("show")
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    })
+
+
+    row33.addEventListener('mouseleave',()=>{
+        if(check33==0 && position3==1 && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g3.classList.remove("show")
+                r3.classList.add("show")
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+
+            }
+            if (turn == "O") {
+                r3.classList.remove("show")
+                g3.classList.add("show")
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+        }
+    })
+
+    row34.addEventListener('mouseenter', () => {
+        if (check34 == 0 && position3 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g4.classList.add("show");
+                // g4.classList.remove("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r4.classList.add("show");
+                // r4.classList.remove("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row34.addEventListener('mouseleave', () => {
+        if (check34 == 0 && position3 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g4.classList.remove("show");
+                r4.classList.remove("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+            if (turn == "O") {
+                r4.classList.remove("show");
+                g4.classList.remove("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    });
+
+    row35.addEventListener('mouseenter', () => {
+        if (check35 == 0 && position3 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g5.classList.add("show");
+                // g5.classList.remove("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r5.classList.add("show");
+                // r5.classList.remove("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row35.addEventListener('mouseleave', () => {
+        if (check35 == 0 && position3 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g5.classList.remove("show");
+                r5.classList.remove("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+            if (turn == "O") {
+                r5.classList.remove("show");
+                g5.classList.remove("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    });
+
+    row36.addEventListener('mouseenter', () => {
+        if (check36 == 0 && position3 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g6.classList.add("show");
+                // g6.classList.remove("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r6.classList.add("show");
+                // r6.classList.remove("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+
+    row36.addEventListener('mouseleave', () => {
+        if (check36 == 0 && position3 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g6.classList.remove("show");
+                r6.classList.remove("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+            if (turn == "O") {
+                r6.classList.remove("show");
+                g6.classList.remove("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    });
+
+    row37.addEventListener('mouseenter', () => {
+        if (check37 == 0 && position3 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g7.classList.add("show");
+                // g7.classList.remove("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r7.classList.add("show");
+                // r7.classList.remove("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row37.addEventListener('mouseleave', () => {
+        if (check37 == 0 && position3 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g7.classList.remove("show");
+                r7.classList.remove("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+            if (turn == "O") {
+                r7.classList.remove("show");
+                g7.classList.remove("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    });
+
+    row38.addEventListener('mouseenter', () => {
+        if (check38 == 0 && position3 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g8.classList.add("show");
+                // g8.classList.remove("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r8.classList.add("show");
+                // r8.classList.remove("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row38.addEventListener('mouseleave', () => {
+        if (check38 == 0 && position3 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g8.classList.remove("show");
+                r8.classList.remove("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+            if (turn == "O") {
+                r8.classList.remove("show");
+                g8.classList.remove("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    });
+
+    row39.addEventListener('mouseenter', () => {
+        if (check39 == 0 && position3 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g9.classList.add("show");
+                // g9.classList.remove("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r9.classList.add("show");
+                // r9.classList.remove("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row39.addEventListener('mouseleave', () => {
+        if (check39 == 0 && position3 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g9.classList.remove("show");
+                r9.classList.remove("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+            if (turn == "O") {
+                r9.classList.remove("show");
+                g9.classList.remove("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    });
+
+
+    // ROW 1
+
+    row11.addEventListener('mouseenter',()=>{
+        if(check11==0 && position1==1 && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g1.classList.add("show")
+                r1.classList.remove("show")
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+
+            }
+            if (turn == "O") {
+                r1.classList.add("show")
+                g1.classList.remove("show")
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    })
+
+    row11.addEventListener('mouseleave',()=>{
+        if(check11==0 && position1==1 && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g1.classList.remove("show")
+                r1.classList.add("show")
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+
+            }
+            if (turn == "O") {
+                r1.classList.remove("show")
+                g1.classList.add("show")
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+        }
+    })
+
+    row12.addEventListener('mouseenter',()=>{
+        if(check12==0 && position1==1 && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g2.classList.add("show")
+                // g1.classList.remove("show")
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+
+            }
+            if (turn == "O") {
+                r2.classList.add("show")
+                // r1.classList.remove("show")
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    })
+
+    row12.addEventListener('mouseleave',()=>{
+        if(check12==0 && position1==1 && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g2.classList.remove("show")
+                r2.classList.remove("show")
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+
+            }
+            if (turn == "O") {
+                r2.classList.remove("show")
+                g2.classList.remove("show")
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    })
+    
+
+    row13.addEventListener('mouseenter',()=>{
+        if(check13==0 && position1==1 && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g3.classList.add("show")
+                // g1.classList.remove("show")
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+
+            }
+            if (turn == "O") {
+                r3.classList.add("show")
+                // r1.classList.remove("show")
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    })
+
+    row13.addEventListener('mouseleave',()=>{
+        if(check13==0 && position1==1 && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g3.classList.remove("show")
+                r3.classList.remove("show")
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+
+            }
+            if (turn == "O") {
+                r3.classList.remove("show")
+                g3.classList.remove("show")
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    })
+
+    row14.addEventListener('mouseenter', () => {
+        if (check14 == 0 && position1 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g4.classList.add("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r4.classList.add("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row14.addEventListener('mouseleave', () => {
+        if (check14 == 0 && position1 == 1 && isfirstturn == false) {
+            g4.classList.remove("show");
+            r4.classList.remove("show");
+            area4.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row15.addEventListener('mouseenter', () => {
+        if (check15 == 0 && position1 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g5.classList.add("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r5.classList.add("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+        }
+    }});
+    
+    row15.addEventListener('mouseleave', () => {
+        if (check15 == 0 && position1 == 1 && isfirstturn == false) {
+            g5.classList.remove("show");
+            r5.classList.remove("show");
+            area5.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row16.addEventListener('mouseenter', () => {
+        if (check16 == 0 && position1 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g6.classList.add("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r6.classList.add("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row16.addEventListener('mouseleave', () => {
+        if (check16 == 0 && position1 == 1 && isfirstturn == false) {
+            g6.classList.remove("show");
+            r6.classList.remove("show");
+            area6.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row17.addEventListener('mouseenter', () => {
+        if (check17 == 0 && position1 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g7.classList.add("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r7.classList.add("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row17.addEventListener('mouseleave', () => {
+        if (check17 == 0 && position1 == 1 && isfirstturn == false) {
+            g7.classList.remove("show");
+            r7.classList.remove("show");
+            area7.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+
+    row18.addEventListener('mouseenter', () => {
+        if (check18 == 0 && position1 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g8.classList.add("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r8.classList.add("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row18.addEventListener('mouseleave', () => {
+        if (check18 == 0 && position1 == 1 && isfirstturn == false) {
+            g8.classList.remove("show");
+            r8.classList.remove("show");
+            area8.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row19.addEventListener('mouseenter', () => {
+        if (check19 == 0 && position1 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g9.classList.add("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r9.classList.add("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row19.addEventListener('mouseleave', () => {
+        if (check19 == 0 && position1 == 1 && isfirstturn == false) {
+            g9.classList.remove("show");
+            r9.classList.remove("show");
+            area9.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+    
+
+
+
+    // Row 2
+
+
+    row21.addEventListener('mouseenter',()=>{
+        if(check21==0 && position2==1  && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g1.classList.add("show")
+                // g1.classList.remove("show")
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+
+            }
+            if (turn == "O") {
+                r1.classList.add("show")
+                // r1.classList.remove("show")
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    })
+
+    row21.addEventListener('mouseleave',()=>{
+        if(check21==0 && position2==1  && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g1.classList.remove("show")
+                r1.classList.remove("show")
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+
+            }
+            if (turn == "O") {
+                r1.classList.remove("show")
+                g1.classList.remove("show")
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    })
+
+    row22.addEventListener('mouseenter',()=>{
+        if(check22==0 && position2==1 && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g2.classList.add("show")
+                r2.classList.remove("show")
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+
+            }
+            if (turn == "O") {
+                r2.classList.add("show")
+                g2.classList.remove("show")
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    })
+
+    row22.addEventListener('mouseleave',()=>{
+        if(check22==0 && position2==1 && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g2.classList.remove("show")
+                r2.classList.add("show")
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+
+            }
+            if (turn == "O") {
+                r2.classList.remove("show")
+                g2.classList.add("show")
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+        }
+    })
+
+    row23.addEventListener('mouseenter', () => {
+        if (check23 == 0 && position2 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g3.classList.add("show");
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r3.classList.add("show");
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row23.addEventListener('mouseleave', () => {
+        if (check23 == 0 && position2 == 1 && isfirstturn == false) {
+            g3.classList.remove("show");
+            r3.classList.remove("show");
+            area3.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row24.addEventListener('mouseenter', () => {
+        if (check24 == 0 && position2 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g4.classList.add("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r4.classList.add("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row24.addEventListener('mouseleave', () => {
+        if (check24 == 0 && position2 == 1 && isfirstturn == false) {
+            g4.classList.remove("show");
+            r4.classList.remove("show");
+            area4.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row25.addEventListener('mouseenter', () => {
+        if (check25 == 0 && position2 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g5.classList.add("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r5.classList.add("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row25.addEventListener('mouseleave', () => {
+        if (check25 == 0 && position2 == 1 && isfirstturn == false) {
+            g5.classList.remove("show");
+            r5.classList.remove("show");
+            area5.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row26.addEventListener('mouseenter', () => {
+        if (check26 == 0 && position2 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g6.classList.add("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r6.classList.add("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row26.addEventListener('mouseleave', () => {
+        if (check26 == 0 && position2 == 1 && isfirstturn == false) {
+            g6.classList.remove("show");
+            r6.classList.remove("show");
+            area6.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+    
+    row27.addEventListener('mouseenter', () => {
+        if (check27 == 0 && position2 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g7.classList.add("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r7.classList.add("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row27.addEventListener('mouseleave', () => {
+        if (check27 == 0 && position2 == 1 && isfirstturn == false) {
+            g7.classList.remove("show");
+            r7.classList.remove("show");
+            area7.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row28.addEventListener('mouseenter', () => {
+        if (check28 == 0 && position2 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g8.classList.add("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r8.classList.add("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row28.addEventListener('mouseleave', () => {
+        if (check28 == 0 && position2 == 1 && isfirstturn == false) {
+            g8.classList.remove("show");
+            r8.classList.remove("show");
+            area8.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row29.addEventListener('mouseenter', () => {
+        if (check29 == 0 && position2 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g9.classList.add("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r9.classList.add("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row29.addEventListener('mouseleave', () => {
+        if (check29 == 0 && position2 == 1 && isfirstturn == false) {
+            g9.classList.remove("show");
+            r9.classList.remove("show");
+            area9.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+
+    // ROW 4
+
+    row41.addEventListener('mouseenter',()=>{
+        if(check41==0 && position4==1  && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g1.classList.add("show")
+                // g1.classList.remove("show")
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+
+            }
+            if (turn == "O") {
+                r1.classList.add("show")
+                // r1.classList.remove("show")
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    })
+
+    row41.addEventListener('mouseleave',()=>{
+        if(check41==0 && position4==1  && isfirstturn==false)
+        {
+            if (turn == "X") {
+                g1.classList.remove("show")
+                r1.classList.remove("show")
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+
+            }
+            if (turn == "O") {
+                r1.classList.remove("show")
+                g1.classList.remove("show")
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    })
+
+    row42.addEventListener('mouseenter', () => {
+        if (check42 == 0 && position4 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g2.classList.add("show");
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r2.classList.add("show");
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+        }
+    }});
+    
+    row42.addEventListener('mouseleave', () => {
+        if (check42 == 0 && position4 == 1 && isfirstturn == false) {
+            g2.classList.remove("show");
+            r2.classList.remove("show");
+            area2.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row43.addEventListener('mouseenter', () => {
+        if (check43 == 0 && position4 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g3.classList.add("show");
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r3.classList.add("show");
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row43.addEventListener('mouseleave', () => {
+        if (check43 == 0 && position4 == 1 && isfirstturn == false) {
+            g3.classList.remove("show");
+            r3.classList.remove("show");
+            area3.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row44.addEventListener('mouseenter', () => {
+        if (check44 == 0 && position4 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g4.classList.add("show");
+                r4.classList.remove("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r4.classList.add("show");
+                g4.classList.remove("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row44.addEventListener('mouseleave', () => {
+        if (check44 == 0 && position4 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g4.classList.remove("show");
+                r4.classList.add("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+            if (turn == "O") {
+                r4.classList.remove("show");
+                g4.classList.add("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+        }
+    });
+    
+
+    row45.addEventListener('mouseenter', () => {
+        if (check45 == 0 && position4 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g5.classList.add("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r5.classList.add("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row45.addEventListener('mouseleave', () => {
+        if (check45 == 0 && position4 == 1 && isfirstturn == false) {
+            g5.classList.remove("show");
+            r5.classList.remove("show");
+            area5.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row46.addEventListener('mouseenter', () => {
+        if (check46 == 0 && position4 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g6.classList.add("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r6.classList.add("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row46.addEventListener('mouseleave', () => {
+        if (check46 == 0 && position4 == 1 && isfirstturn == false) {
+            g6.classList.remove("show");
+            r6.classList.remove("show");
+            area6.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row47.addEventListener('mouseenter', () => {
+        if (check47 == 0 && position4 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g7.classList.add("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r7.classList.add("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row47.addEventListener('mouseleave', () => {
+        if (check47 == 0 && position4 == 1 && isfirstturn == false) {
+            g7.classList.remove("show");
+            r7.classList.remove("show");
+            area7.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row48.addEventListener('mouseenter', () => {
+        if (check48 == 0 && position4 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g8.classList.add("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r8.classList.add("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row48.addEventListener('mouseleave', () => {
+        if (check48 == 0 && position4 == 1 && isfirstturn == false) {
+            g8.classList.remove("show");
+            r8.classList.remove("show");
+            area8.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row49.addEventListener('mouseenter', () => {
+        if (check49 == 0 && position4 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g9.classList.add("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r9.classList.add("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row49.addEventListener('mouseleave', () => {
+        if (check49 == 0 && position4 == 1 && isfirstturn == false) {
+            g9.classList.remove("show");
+            r9.classList.remove("show");
+            area9.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    
+    // Row 5
+
+    row51.addEventListener('mouseenter', () => {
+        if (check51 == 0 && position5 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g1.classList.add("show");
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r1.classList.add("show");
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row51.addEventListener('mouseleave', () => {
+        if (check51 == 0 && position5 == 1 && isfirstturn == false) {
+            g1.classList.remove("show");
+            r1.classList.remove("show");
+            area1.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+    
+    row52.addEventListener('mouseenter', () => {
+        if (check52 == 0 && position5 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g2.classList.add("show");
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r2.classList.add("show");
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row52.addEventListener('mouseleave', () => {
+        if (check52 == 0 && position5 == 1 && isfirstturn == false) {
+            g2.classList.remove("show");
+            r2.classList.remove("show");
+            area2.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row53.addEventListener('mouseenter', () => {
+        if (check53 == 0 && position5 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g3.classList.add("show");
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r3.classList.add("show");
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row53.addEventListener('mouseleave', () => {
+        if (check53 == 0 && position5 == 1 && isfirstturn == false) {
+            g3.classList.remove("show");
+            r3.classList.remove("show");
+            area3.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row54.addEventListener('mouseenter', () => {
+        if (check54 == 0 && position5 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g4.classList.add("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r4.classList.add("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row54.addEventListener('mouseleave', () => {
+        if (check54 == 0 && position5 == 1 && isfirstturn == false) {
+            g4.classList.remove("show");
+            r4.classList.remove("show");
+            area4.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row55.addEventListener('mouseenter', () => {
+        if (check55 == 0 && position5 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g5.classList.add("show");
+                r5.classList.remove("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r5.classList.add("show");
+                g5.classList.remove("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row55.addEventListener('mouseleave', () => {
+        if (check55 == 0 && position5 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g5.classList.remove("show");
+                r5.classList.add("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+            if (turn == "O") {
+                r5.classList.remove("show");
+                g5.classList.add("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+        }
+    });
+    
+
+    row56.addEventListener('mouseenter', () => {
+        if (check56 == 0 && position5 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g6.classList.add("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r6.classList.add("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row56.addEventListener('mouseleave', () => {
+        if (check56 == 0 && position5 == 1 && isfirstturn == false) {
+            g6.classList.remove("show");
+            r6.classList.remove("show");
+            area6.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row57.addEventListener('mouseenter', () => {
+        if (check57 == 0 && position5 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g7.classList.add("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r7.classList.add("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row57.addEventListener('mouseleave', () => {
+        if (check57 == 0 && position5 == 1 && isfirstturn == false) {
+            g7.classList.remove("show");
+            r7.classList.remove("show");
+            area7.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row58.addEventListener('mouseenter', () => {
+        if (check58 == 0 && position5 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g8.classList.add("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r8.classList.add("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row58.addEventListener('mouseleave', () => {
+        if (check58 == 0 && position5 == 1 && isfirstturn == false) {
+            g8.classList.remove("show");
+            r8.classList.remove("show");
+            area8.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row59.addEventListener('mouseenter', () => {
+        if (check59 == 0 && position5 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g9.classList.add("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if ( turn == "O") {
+                r9.classList.add("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row59.addEventListener('mouseleave', () => {
+        if (check59 == 0 && position5 == 1 && isfirstturn == false) {
+            g9.classList.remove("show");
+            r9.classList.remove("show");
+            area9.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+
+    // ROW 6
+
+    row61.addEventListener('mouseenter', () => {
+        if (check61 == 0 && position6 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g1.classList.add("show");
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r1.classList.add("show");
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row61.addEventListener('mouseleave', () => {
+        if (check61 == 0 && position6 == 1 && isfirstturn == false) {
+            g1.classList.remove("show");
+            r1.classList.remove("show");
+            area1.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row62.addEventListener('mouseenter', () => {
+        if (check62 == 0 && position6 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g2.classList.add("show");
+                r2.classList.remove("show");
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r2.classList.add("show");
+                g2.classList.remove("show");
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+
+    row63.addEventListener('mouseenter', () => {
+        if (check63 == 0 && position6 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g3.classList.add("show");
+                r3.classList.remove("show");
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r3.classList.add("show");
+                g3.classList.remove("show");
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row63.addEventListener('mouseleave', () => {
+        if (check63 == 0 && position6 == 1 && isfirstturn == false) {
+            g3.classList.remove("show");
+            r3.classList.remove("show");
+            area3.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row64.addEventListener('mouseenter', () => {
+        if (check64 == 0 && position6 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g4.classList.add("show");
+                r4.classList.remove("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r4.classList.add("show");
+                g4.classList.remove("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row65.addEventListener('mouseenter', () => {
+        if (check65 == 0 && position6 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g5.classList.add("show");
+                r5.classList.remove("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r5.classList.add("show");
+                g5.classList.remove("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row67.addEventListener('mouseenter', () => {
+        if (check67 == 0 && position6 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g7.classList.add("show");
+                r7.classList.remove("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r7.classList.add("show");
+                g7.classList.remove("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row68.addEventListener('mouseenter', () => {
+        if (check68 == 0 && position6 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g8.classList.add("show");
+                r8.classList.remove("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r8.classList.add("show");
+                g8.classList.remove("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+
+    row69.addEventListener('mouseenter', () => {
+        if (check69 == 0 && position6 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g9.classList.add("show");
+                r9.classList.remove("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r9.classList.add("show");
+                g9.classList.remove("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+
+    row62.addEventListener('mouseleave', () => {
+        if (check62 == 0 && position6 == 1 && isfirstturn == false) {
+            g2.classList.remove("show");
+            r2.classList.remove("show");
+            area2.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row64.addEventListener('mouseleave', () => {
+        if (check64 == 0 && position6 == 1 && isfirstturn == false) {
+            g4.classList.remove("show");
+            r4.classList.remove("show");
+            area4.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row65.addEventListener('mouseleave', () => {
+        if (check65 == 0 && position6 == 1 && isfirstturn == false) {
+            g5.classList.remove("show");
+            r5.classList.remove("show");
+            area5.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row67.addEventListener('mouseleave', () => {
+        if (check67 == 0 && position6 == 1 && isfirstturn == false) {
+            g7.classList.remove("show");
+            r7.classList.remove("show");
+            area7.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row68.addEventListener('mouseleave', () => {
+        if (check68 == 0 && position6 == 1 && isfirstturn == false) {
+            g8.classList.remove("show");
+            r8.classList.remove("show");
+            area8.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row69.addEventListener('mouseleave', () => {
+        if (check69 == 0 && position6 == 1 && isfirstturn == false) {
+            g9.classList.remove("show");
+            r9.classList.remove("show");
+            area9.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row66.addEventListener('mouseenter', () => {
+        if (check66 == 0 && position6 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g6.classList.add("show");
+                r6.classList.remove("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r6.classList.add("show");
+                g6.classList.remove("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row66.addEventListener('mouseleave', () => {
+        if (check66 == 0 && position6 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g6.classList.remove("show");
+                r6.classList.add("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+            if (turn == "O") {
+                r6.classList.remove("show");
+                g6.classList.add("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+        }
+    });
+    
+
+    // ROW 7
+
+    row71.addEventListener('mouseenter', () => {
+        if (check71 == 0 && position7 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g1.classList.add("show");
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r1.classList.add("show");
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row71.addEventListener('mouseleave', () => {
+        if (check71 == 0 && position7 == 1 && isfirstturn == false) {
+            g1.classList.remove("show");
+            r1.classList.remove("show");
+            area1.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row72.addEventListener('mouseenter', () => {
+        if (check72 == 0 && position7 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g2.classList.add("show");
+                r2.classList.remove("show");
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r2.classList.add("show");
+                g2.classList.remove("show");
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row72.addEventListener('mouseleave', () => {
+        if (check72 == 0 && position7 == 1 && isfirstturn == false) {
+            g2.classList.remove("show");
+            r2.classList.remove("show");
+            area2.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row73.addEventListener('mouseenter', () => {
+        if (check73 == 0 && position7 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g3.classList.add("show");
+                r3.classList.remove("show");
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r3.classList.add("show");
+                g3.classList.remove("show");
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row73.addEventListener('mouseleave', () => {
+        if (check73 == 0 && position7 == 1 && isfirstturn == false) {
+            g3.classList.remove("show");
+            r3.classList.remove("show");
+            area3.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row74.addEventListener('mouseenter', () => {
+        if (check74 == 0 && position7 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g4.classList.add("show");
+                r4.classList.remove("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r4.classList.add("show");
+                g4.classList.remove("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row74.addEventListener('mouseleave', () => {
+        if (check74 == 0 && position7 == 1 && isfirstturn == false) {
+            g4.classList.remove("show");
+            r4.classList.remove("show");
+            area4.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row75.addEventListener('mouseenter', () => {
+        if (check75 == 0 && position7 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g5.classList.add("show");
+                r5.classList.remove("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r5.classList.add("show");
+                g5.classList.remove("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row75.addEventListener('mouseleave', () => {
+        if (check75 == 0 && position7 == 1 && isfirstturn == false) {
+            g5.classList.remove("show");
+            r5.classList.remove("show");
+            area5.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row76.addEventListener('mouseenter', () => {
+        if (check76 == 0 && position7 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g6.classList.add("show");
+                r6.classList.remove("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r6.classList.add("show");
+                g6.classList.remove("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row76.addEventListener('mouseleave', () => {
+        if (check76 == 0 && position7 == 1 && isfirstturn == false) {
+            g6.classList.remove("show");
+            r6.classList.remove("show");
+            area6.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row78.addEventListener('mouseenter', () => {
+        if (check78 == 0 && position7 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g8.classList.add("show");
+                r8.classList.remove("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r8.classList.add("show");
+                g8.classList.remove("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row78.addEventListener('mouseleave', () => {
+        if (check78 == 0 && position7 == 1 && isfirstturn == false) {
+            g8.classList.remove("show");
+            r8.classList.remove("show");
+            area8.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row79.addEventListener('mouseenter', () => {
+        if (check79 == 0 && position7 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g9.classList.add("show");
+                r9.classList.remove("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r9.classList.add("show");
+                g9.classList.remove("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row79.addEventListener('mouseleave', () => {
+        if (check79 == 0 && position7 == 1 && isfirstturn == false) {
+            g9.classList.remove("show");
+            r9.classList.remove("show");
+            area9.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+    
+    row77.addEventListener('mouseenter', () => {
+        if (check77 == 0 && position7 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g7.classList.add("show");
+                r7.classList.remove("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r7.classList.add("show");
+                g7.classList.remove("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row77.addEventListener('mouseleave', () => {
+        if (check77 == 0 && position7 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g7.classList.remove("show");
+                r7.classList.add("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+            if (turn == "O") {
+                r7.classList.remove("show");
+                g7.classList.add("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+        }
+    });
+
+
+    // ROW 8
+
+    row81.addEventListener('mouseenter', () => {
+        if (check81 == 0 && position8 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g1.classList.add("show");
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r1.classList.add("show");
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row81.addEventListener('mouseleave', () => {
+        if (check81 == 0 && position8 == 1 && isfirstturn == false) {
+            g1.classList.remove("show");
+            r1.classList.remove("show");
+            area1.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row82.addEventListener('mouseenter', () => {
+        if (check82 == 0 && position8 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g2.classList.add("show");
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r2.classList.add("show");
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row82.addEventListener('mouseleave', () => {
+        if (check82 == 0 && position8 == 1 && isfirstturn == false) {
+            g2.classList.remove("show");
+            r2.classList.remove("show");
+            area2.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row82.addEventListener('mouseenter', () => {
+        if (check82 == 0 && position8 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g2.classList.add("show");
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r2.classList.add("show");
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row82.addEventListener('mouseleave', () => {
+        if (check82 == 0 && position8 == 1 && isfirstturn == false) {
+            g2.classList.remove("show");
+            r2.classList.remove("show");
+            area2.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    
+    row83.addEventListener('mouseenter', () => {
+        if (check83 == 0 && position8 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g3.classList.add("show");
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r3.classList.add("show");
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row83.addEventListener('mouseleave', () => {
+        if (check83 == 0 && position8 == 1 && isfirstturn == false) {
+            g3.classList.remove("show");
+            r3.classList.remove("show");
+            area3.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row84.addEventListener('mouseenter', () => {
+        if (check84 == 0 && position8 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g4.classList.add("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r4.classList.add("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row84.addEventListener('mouseleave', () => {
+        if (check84 == 0 && position8 == 1 && isfirstturn == false) {
+            g4.classList.remove("show");
+            r4.classList.remove("show");
+            area4.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row85.addEventListener('mouseenter', () => {
+        if (check85 == 0 && position8 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g5.classList.add("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r5.classList.add("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+        }
+    }});
+    
+    row85.addEventListener('mouseleave', () => {
+        if (check85 == 0 && position8 == 1 && isfirstturn == false) {
+            g5.classList.remove("show");
+            r5.classList.remove("show");
+            area5.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row86.addEventListener('mouseenter', () => {
+        if (check86 == 0 && position8 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g6.classList.add("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r6.classList.add("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row86.addEventListener('mouseleave', () => {
+        if (check86 == 0 && position8 == 1 && isfirstturn == false) {
+            g6.classList.remove("show");
+            r6.classList.remove("show");
+            area6.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row87.addEventListener('mouseenter', () => {
+        if (check87 == 0 && position8 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g7.classList.add("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r7.classList.add("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+        }
+    }});
+    
+    row87.addEventListener('mouseleave', () => {
+        if (check87 == 0 && position8 == 1 && isfirstturn == false) {
+            g7.classList.remove("show");
+            r7.classList.remove("show");
+            area7.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row89.addEventListener('mouseenter', () => {
+        if (check89 == 0 && position8 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g9.classList.add("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r9.classList.add("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+        }
+    }});
+    
+    row89.addEventListener('mouseleave', () => {
+        if (check89 == 0 && position8 == 1 && isfirstturn == false) {
+            g9.classList.remove("show");
+            r9.classList.remove("show");
+            area9.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    });
+
+    row88.addEventListener('mouseenter', () => {
+        if (check88 == 0 && position8 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g8.classList.add("show");
+                r8.classList.remove("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r8.classList.add("show");
+                g8.classList.remove("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+        }
+    }});
+    
+    row88.addEventListener('mouseleave', () => {
+        if (check88 == 0 && position8 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g8.classList.remove("show");
+                r8.classList.add("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+            if (turn == "O") {
+                r8.classList.remove("show");
+                g8.classList.add("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+        }
+    });
+
+
+    // Row 9
+
+    row91.addEventListener('mouseenter', () => {
+        if (check91 == 0 && position9 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g1.classList.add("show");
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r1.classList.add("show");
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+        }
+    }});
+    
+    row91.addEventListener('mouseleave', () => {
+        if (check91 == 0 && position9 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g1.classList.remove("show");
+                r1.classList.remove("show");
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+            if (turn == "O") {
+                r1.classList.remove("show");
+                g1.classList.remove("show");
+                area1.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    });
+    
+    row92.addEventListener('mouseenter', () => {
+        if (check92 == 0 && position9 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g2.classList.add("show");
+                r2.classList.remove("show");
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r2.classList.add("show");
+                g2.classList.remove("show");
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+
+
+    row92.addEventListener('mouseleave', () => {
+        if (check92 == 0 && position9 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g2.classList.remove("show");
+                r2.classList.remove("show");
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+            if (turn == "O") {
+                r2.classList.remove("show");
+                g2.classList.remove("show");
+                area2.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    });
+
+    
+    row93.addEventListener('mouseenter', () => {
+        if (check93 == 0 && position9 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g3.classList.add("show");
+                r3.classList.remove("show");
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r3.classList.add("show");
+                g3.classList.remove("show");
+                area3.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+
+    row93.addEventListener('mouseleave', () => {
+    if (check93 == 0 && position9 == 1 && isfirstturn == false) {
+        if (turn == "X") {
+            g3.classList.remove("show");
+            r3.classList.remove("show");
+            area3.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+        if (turn == "O") {
+            r3.classList.remove("show");
+            g3.classList.remove("show");
+            area3.forEach(element => {
+                element.style.backgroundColor = "#cfcece";
+            });
+        }
+    }
+});
+
+    
+    row94.addEventListener('mouseenter', () => {
+        if (check94 == 0 && position9 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g4.classList.add("show");
+                r4.classList.remove("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r4.classList.add("show");
+                g4.classList.remove("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row94.addEventListener('mouseleave', () => {
+        if (check94 == 0 && position9 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g4.classList.remove("show");
+                r4.classList.remove("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+            if (turn == "O") {
+                r4.classList.remove("show");
+                g4.classList.remove("show");
+                area4.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    });
+
+    row95.addEventListener('mouseenter', () => {
+        if (check95 == 0 && position9 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g5.classList.add("show");
+                r5.classList.remove("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r5.classList.add("show");
+                g5.classList.remove("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row95.addEventListener('mouseleave', () => {
+        if (check95 == 0 && position9 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g5.classList.remove("show");
+                r5.classList.remove("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+            if (turn == "O") {
+                r5.classList.remove("show");
+                g5.classList.remove("show");
+                area5.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    });
+
+    row96.addEventListener('mouseenter', () => {
+        if (check96 == 0 && position9 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g6.classList.add("show");
+                r6.classList.remove("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r6.classList.add("show");
+                g6.classList.remove("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row96.addEventListener('mouseleave', () => {
+        if (check96 == 0 && position9 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g6.classList.remove("show");
+                r6.classList.remove("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+            if (turn == "O") {
+                r6.classList.remove("show");
+                g6.classList.remove("show");
+                area6.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    });
+    
+    row97.addEventListener('mouseenter', () => {
+        if (check97 == 0 && position9 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g7.classList.add("show");
+                r7.classList.remove("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r7.classList.add("show");
+                g7.classList.remove("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row97.addEventListener('mouseleave', () => {
+        if (check97 == 0 && position9 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g7.classList.remove("show");
+                r7.classList.remove("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+            if (turn == "O") {
+                r7.classList.remove("show");
+                g7.classList.remove("show");
+                area7.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    });
+
+    row98.addEventListener('mouseenter', () => {
+        if (check98 == 0 && position9 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g8.classList.add("show");
+                r8.classList.remove("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r8.classList.add("show");
+                g8.classList.remove("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row98.addEventListener('mouseleave', () => {
+        if (check98 == 0 && position9 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g8.classList.remove("show");
+                r8.classList.remove("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+            if (turn == "O") {
+                r8.classList.remove("show");
+                g8.classList.remove("show");
+                area8.forEach(element => {
+                    element.style.backgroundColor = "#cfcece";
+                });
+            }
+        }
+    });
+
+    row99.addEventListener('mouseenter', () => {
+        if (check99 == 0 && position9 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g9.classList.add("show");
+                r9.classList.remove("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+            if (turn == "O") {
+                r9.classList.add("show");
+                g9.classList.remove("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+        }
+    });
+    
+    row99.addEventListener('mouseleave', () => {
+        if (check99 == 0 && position9 == 1 && isfirstturn == false) {
+            if (turn == "X") {
+                g9.classList.remove("show");
+                r9.classList.add("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#ccaca4";
+                });
+            }
+            if (turn == "O") {
+                r9.classList.remove("show");
+                g9.classList.add("show");
+                area9.forEach(element => {
+                    element.style.backgroundColor = "#b0ccac";
+                });
+            }
+        }
+    });
+    
+    
+    
+
+    
+    
+
+
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+        
+    
+    
+    
+    
+ 
+
 
 // if(check11==0 && again31==0 && position3==1){
 //     row31.addEventListener('mouseenter', () => {
