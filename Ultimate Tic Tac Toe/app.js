@@ -8,22 +8,6 @@ reset.onclick = () => {
 
 let turn = "X";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const part1 = document.querySelector(".unit1")
 const part2 = document.querySelector(".unit2")
 const part3 = document.querySelector(".unit3")
@@ -35,14 +19,6 @@ const part6 = document.querySelector(".unit6")
 const part7 = document.querySelector(".unit7")
 const part8 = document.querySelector(".unit8")
 const part9 = document.querySelector(".unit9")
-
-
-
-
-
-
-
-
 
 // display which turn is going on in html
 
@@ -62,17 +38,6 @@ function turntext() {
         console.log("ing")
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 // now check and change th color if the chance is there
 
@@ -195,7 +160,6 @@ function repshadow() {
             });
         }
     }
-
     if (position4 == 1) {
         if (turn == "X") {
             r4.classList.toggle("show")
@@ -212,7 +176,6 @@ function repshadow() {
             });
         }
     }
-
     if (position5 == 1) {
         if (turn == "X") {
             r5.classList.toggle("show")
@@ -229,7 +192,6 @@ function repshadow() {
             });
         }
     }
-
     if (position6 == 1) {
         if (turn == "X") {
             r6.classList.toggle("show")
@@ -2203,20 +2165,6 @@ row99.onclick = () => {
 
 
 
-// const cell1 = document.querySelectorAll(".cells");
-
-// cell1.forEach((element, x) => {
-//     element.onclick = () => {
-//         position2=1
-//     }
-// });
-
-
-
-
-
-
-
 
 let isfirstturn = true;
 
@@ -2234,15 +2182,6 @@ function changeturn() {
     }
     turntext()
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2997,14 +2936,6 @@ function mainwincheck() {
         drawpop.classList.toggle("show")
     }
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -5766,7 +5697,6 @@ const pos9 = document.querySelectorAll(".cell9")
                 });
         }
     }});
-    
     row91.addEventListener('mouseleave', () => {
         if (check91 == 0 && position9 == 1 && isfirstturn == false) {
             if (turn == "X") {
@@ -5785,7 +5715,6 @@ const pos9 = document.querySelectorAll(".cell9")
             }
         }
     });
-    
     row92.addEventListener('mouseenter', () => {
         if (check92 == 0 && position9 == 1 && isfirstturn == false) {
             if (turn == "X") {
@@ -5804,8 +5733,6 @@ const pos9 = document.querySelectorAll(".cell9")
             }
         }
     });
-
-
     row92.addEventListener('mouseleave', () => {
         if (check92 == 0 && position9 == 1 && isfirstturn == false) {
             if (turn == "X") {
@@ -5824,8 +5751,6 @@ const pos9 = document.querySelectorAll(".cell9")
             }
         }
     });
-
-    
     row93.addEventListener('mouseenter', () => {
         if (check93 == 0 && position9 == 1 && isfirstturn == false) {
             if (turn == "X") {
@@ -5844,7 +5769,6 @@ const pos9 = document.querySelectorAll(".cell9")
             }
         }
     });
-
     row93.addEventListener('mouseleave', () => {
     if (check93 == 0 && position9 == 1 && isfirstturn == false) {
         if (turn == "X") {
@@ -5863,8 +5787,6 @@ const pos9 = document.querySelectorAll(".cell9")
         }
     }
 });
-
-    
     row94.addEventListener('mouseenter', () => {
         if (check94 == 0 && position9 == 1 && isfirstturn == false) {
             if (turn == "X") {
@@ -5882,8 +5804,7 @@ const pos9 = document.querySelectorAll(".cell9")
                 });
             }
         }
-    });
-    
+    }); 
     row94.addEventListener('mouseleave', () => {
         if (check94 == 0 && position9 == 1 && isfirstturn == false) {
             if (turn == "X") {
@@ -5902,7 +5823,6 @@ const pos9 = document.querySelectorAll(".cell9")
             }
         }
     });
-
     row95.addEventListener('mouseenter', () => {
         if (check95 == 0 && position9 == 1 && isfirstturn == false) {
             if (turn == "X") {
@@ -5921,7 +5841,6 @@ const pos9 = document.querySelectorAll(".cell9")
             }
         }
     });
-    
     row95.addEventListener('mouseleave', () => {
         if (check95 == 0 && position9 == 1 && isfirstturn == false) {
             if (turn == "X") {
@@ -5940,7 +5859,6 @@ const pos9 = document.querySelectorAll(".cell9")
             }
         }
     });
-
     row96.addEventListener('mouseenter', () => {
         if (check96 == 0 && position9 == 1 && isfirstturn == false) {
             if (turn == "X") {
@@ -5958,8 +5876,7 @@ const pos9 = document.querySelectorAll(".cell9")
                 });
             }
         }
-    });
-    
+    });    
     row96.addEventListener('mouseleave', () => {
         if (check96 == 0 && position9 == 1 && isfirstturn == false) {
             if (turn == "X") {
@@ -5978,7 +5895,6 @@ const pos9 = document.querySelectorAll(".cell9")
             }
         }
     });
-    
     row97.addEventListener('mouseenter', () => {
         if (check97 == 0 && position9 == 1 && isfirstturn == false) {
             if (turn == "X") {
@@ -5997,7 +5913,6 @@ const pos9 = document.querySelectorAll(".cell9")
             }
         }
     });
-    
     row97.addEventListener('mouseleave', () => {
         if (check97 == 0 && position9 == 1 && isfirstturn == false) {
             if (turn == "X") {
@@ -6015,8 +5930,7 @@ const pos9 = document.querySelectorAll(".cell9")
                 });
             }
         }
-    });
-
+    })
     row98.addEventListener('mouseenter', () => {
         if (check98 == 0 && position9 == 1 && isfirstturn == false) {
             if (turn == "X") {
@@ -6035,7 +5949,6 @@ const pos9 = document.querySelectorAll(".cell9")
             }
         }
     });
-    
     row98.addEventListener('mouseleave', () => {
         if (check98 == 0 && position9 == 1 && isfirstturn == false) {
             if (turn == "X") {
@@ -6053,8 +5966,7 @@ const pos9 = document.querySelectorAll(".cell9")
                 });
             }
         }
-    });
-
+    })
     row99.addEventListener('mouseenter', () => {
         if (check99 == 0 && position9 == 1 && isfirstturn == false) {
             if (turn == "X") {
@@ -6073,115 +5985,16 @@ const pos9 = document.querySelectorAll(".cell9")
             }
         }
     });
-    
     row99.addEventListener('mouseleave', () => {
         if (check99 == 0 && position9 == 1 && isfirstturn == false) {
             if (turn == "X") {
                 g9.classList.remove("show");
                 r9.classList.add("show");
                 area9.forEach(element => {
-                    element.style.backgroundColor = "#ccaca4";
-                });
-            }
+                    element.style.backgroundColor = "#ccaca4";});}
             if (turn == "O") {
                 r9.classList.remove("show");
                 g9.classList.add("show");
                 area9.forEach(element => {
-                    element.style.backgroundColor = "#b0ccac";
-                });
-            }
-        }
+                    element.style.backgroundColor = "#b0ccac";});}}
     });
-    
-    
-    
-
-    
-    
-
-
-    
-    
-    
-    
-    
-    
-
-
-    
-    
-    
-    
-    
-
-
-    
-    
-    
-
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-        
-    
-    
-    
-    
- 
-
-
-// if(check11==0 && again31==0 && position3==1){
-//     row31.addEventListener('mouseenter', () => {
-//         // Check your condition here
-//         if (check11==0 && again31==0 && turn=="X" && position3==1) {
-//             position1=1
-//             repshadow()
-//             console.log("YAYYY!!")
-//         }
-//         if (check11==0 && again31==0 && turn=="O" && position3==1) {
-//             position1=1
-//             repshadow()
-//             console.log("YAYYY!!")
-//         }
-//     });
-    
-//     row31.addEventListener('mouseleave', () => {
-//         if(check11==0 && again31 && position3==1)
-//         {
-//             position1=0
-//             repshadow()
-//         }
-//     });}
-    
-    
-    
-    
-    
-    // if(check4!=1 && check4!=2 && winstatus==false){
-    //     row2_1.addEventListener('mouseenter', () => {
-    //         // Check your condition here
-    //         if (turn=="X" && check4!=1 && check4!=2 && winstatus==false) {
-    //             row2_1.innerHTML="X"
-    //             row2_1.style.color="#c73e1d"
-    //         }
-    //         if (turn=="O" && check4!=1 && check4!=2 && winstatus==false) {
-    //             row2_1.innerHTML="O"
-    //             row2_1.style.color="#53c14b"
-    //         }
-    //     });
-        
-    //     row2_1.addEventListener('mouseleave', () => {
-    //         if(check4!=1 && check4!=2){
-    //         row2_1.innerHTML=""
-    //         row2_1.style.color="#cfcece00"}
-    //     });}
